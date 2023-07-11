@@ -146,9 +146,6 @@ nav ul li a:hover::after{
   content: '';
   display: block;
 }
-nav .fas{
-    display: none;
-  }
 
 /* -------MEDIA QUARRIES -------------- */
 @media screen and (min-width:1200px) {
