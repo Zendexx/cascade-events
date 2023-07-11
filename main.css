@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+html{
+  scroll-behavior: smooth;
+}
+.header h1{
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 0.15em;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #205e43; /* Set your desired background color */
+  z-index: 100; 
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ffd346;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+
+}
+@keyframes change{
+  0%
+  {
+    background-image: url(images/gallary_5.jpg)
+  }
+  20%
+  {
+    background-image: url(images/gallary_4.jpg)
+  }
+  40%
+  {
+    background-image: url(images/gallary_1.jpg)
+  }
+  60%
+  {
+    background-image: url(images/gallary_2.jpg)
+  }
+  80%
+  {
+    background-image: url(images/gallary_3.jpg)
+  }
+  100%
+  {
+    background-image: url(images/gallary_4.jpg)
+  }
+}
+
+/* -------- Divided Section --------------- */
+.wrapper .left, 
+.wrapper .right{
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .image{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.25s ease all;
+}
+.events{
+  background: url(images/Hoempage.png);
+}
+.restaurant{
+  background: url(images/buger.jpg);
+}
+.wrapper .left:hover .image,
+.wrapper .right:hover .image{
+  transform: scale(1.2);
+}
+.wrapper .caption{
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+}
+.wrapper .caption h1{
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  
+}
+.wrapper .caption .button{
+  background: #000;
+  color: #fff;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: 0.25s ease all;
+}
+.wrapper .caption .button:hover{
+  background: #ffd346;
+  color: #000;
+}
+.wrapper .side::before{
+  background: rgb(0,0,0,0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  content: '';
+  display: block;
+}
+
+/* -------MEDIA QUARRIES -------------- */
+@media screen and (min-width:1200px) {
+  .wrapper{
+    display: flex;
+  }
+  .wrapper .left, 
+  .wrapper .right{
+  width: 50%;
+  height: 100vh;
+  }
+  nav .fas{
+    display: none;
+  }
+}
+@media screen and (max-width:768px){
+  .header h1{
+    font-size: 20px;
+  }
+  .fas{
+    color: #fff;
+  }
+  nav ul{
+    background: #205e43;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+}

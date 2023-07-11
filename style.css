@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: #205e43;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #205e43; /* Set your desired background color */
+    z-index: 100; 
+  }
+nav h2{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 0.15em;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+nav ul li a{
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ffd346;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after{
+    width: 100%;
+  
+  }
+/* ----Contact Section ----------- */
+  .contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(https://wallpaperaccess.com/full/3124512.jpg);
+    background-size: cover;
+  }
+  .contact .content{
+    max-width: 800px;
+    text-align: center;
+  }
+  .contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .contact .content p{
+    font-weight: 300;
+    color: #fff;
+  }
+  .contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .contact-section .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section .contact-info .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+  }
+  .contact-section .contact-info .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+  .contact-section .contact-info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+  }
+  .contact-section .contact-info .box .text h3{
+    font-weight: 500;
+    color: #fff;
+  }
+  .contact-form{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+  }
+  .contact-form h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+  }
+  .contact-form .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contact-form .inputbox input,
+  .contact-form .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+  .contact-form .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #667;
+  }
+  .contact-form .inputbox input:focus + span,
+  .contact-form .inputbox input:valid + span,
+  .contact-form .inputbox textarea:focus + span,
+  .contact-form .inputbox textarea:valid + span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  .contact-form .inputbox input[type="submit"]{
+    width: 100px;
+    background: #ff004f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+  
+  }
+  .contact-form .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+  
+  }
+  .copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #205e43;
+    font-weight: 300;
+    color: #fff;
+  }
+  .social-icons{
+    margin-top: 30px;
+  }
+  .social-icons a{
+    text-decoration: none;
+    padding-left: 15px;
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+    transition: transform 0.5s;
+  }
+  .social-icons a:hover{
+    color: #ffd346;
+    transform: translateY(-5px);
+  }
+
+
+
+/* -----------MEDIA QUARRIES --------------- */
+
+@media only screen and (max-width: 991px){
+ 
+  .contact{
+    padding: 50px;
+  }
+  .contact-section{
+    flex-direction: column;
+  }
+  .contact-section .contact-info{
+    margin-bottom: 40px;
+  }
+  .contact-section .contact-info .contact-form{
+    width: 100%;
+  }
+  .fas{
+    color: #fff;
+  }
+}
+@media only screen and (max-width: 767px){
+    nav h2{
+        font-size: 21px;
+    }
+  .contact-form{
+    width: 100%;
+  }
+nav .fas{
+    display: block;
+    font-size: 25px;
+}
+nav ul li a{
+    color: #205e43;
+  }
+nav ul{
+    background: #205e43;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* CSS rules specific to tablets go here */
+  nav .fas{
+    display: block;
+    font-size: 25px;
+}
+nav ul li a{
+    color: #205e43;
+  }
+nav ul{
+    background: #f8f8f8;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+}
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  /* CSS styles for phones in landscape mode */
+  /* Place your styles here */
+  .header-text{
+    padding-bottom: 2%;
+  }
+  #header{
+    width: 100%;
+    height: 100%;
+  }
+}
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #16c478;
+    border-radius: 15px;
+}

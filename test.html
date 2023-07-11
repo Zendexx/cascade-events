@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+      <!-- Header -->
+      <header class="header" id="header">
+    
+        <nav class="navbar container">
+            <a href="./">
+                <h2 class="logo">Cascade Events & Catering</h2> 
+            </a>
+
+            <div class="menu" id="menu">
+                <ul class="list">
+                  <li class="list-item">
+                        <a href="./" class="list-link current">Home</a>
+                  </li>
+                    <li class="list-item">
+                        <a href="events.html" class="list-link">Events</a>
+                  </li>
+                    <li class="list-item">
+                      <a href="backup.html" class="list-link">Restaurant</a>
+                  </li>
+                    <li class="list-item">
+                        <a href="#Contacts" class="list-link">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list list-right">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+                      
+
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section id="about" class="section parallax">
+        <div class="overlay"></div>
+        <div class="content">
+          <!-- <h1>Cascade Restaurants</h1> -->
+          <h2 id="changingText">Welcome</h2>
+        </div>
+     </section>
+  
+  <script>
+    // Array of texts to display
+    var texts = ["Cascade Events", "Cascade Restaurant", "Cascade Events", "Ciao"];
+
+    var index = 0;
+    var changingText = document.getElementById("changingText");
+
+    // Function to change the text
+    function changeText() {
+        changingText.textContent = texts[index];
+        index = (index + 1) % texts.length;
+    }
+
+    // Call the function initially
+    changeText();
+
+    // Call the function every 3 seconds (3000 milliseconds)
+    setInterval(changeText, 1500);
+</script>
+</body>
+
+</html>
