@@ -18,7 +18,7 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
-    z-index: 1000;
+    z-index: 2;
   }
 .overlay {
     position: absolute;
@@ -40,7 +40,7 @@ body{
     left: 0;
     width: 100%;
     background-color: #205e43; /* Set your desired background color */
-    z-index: 1001; 
+    z-index: 2; 
   }
   .sticky {
     position: fixed;
@@ -507,7 +507,7 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-  background: #ff004f;
+  background: #16c478;
   border-radius: 15px;
 }
 /* -----------MEDIA QUARRIES --------------- */
@@ -621,6 +621,16 @@ nav ul .fas{
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* CSS rules specific to tablets go here */
+  .fas{
+    color: #16c478;
+  }
+  nav .fas{
+    display: block;
+    font-size: 25px;
+}
+nav ul li a{
+    color: #205e43;
+  }
   nav .fas{
     display: block;
     font-size: 25px;
@@ -649,11 +659,31 @@ nav ul .fas{
 .owl-nav{
   display: none;
 }
+.header-text{
+  padding-top: 100px;
+  font-weight: 800;
+  margin-top: 20%;
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+}
 
 }
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
   /* CSS styles for phones in landscape mode */
   /* Place your styles here */
+  .header-text{
+    padding-top: 100px;
+    font-weight: 800;
+    margin-top: 9%;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+  }
+  #header{
+    position: absolute;
+  }
+  #about{
+    padding-top: 55%;
+  }
   .header-text{
     padding-bottom: 2%;
   }
