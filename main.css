@@ -87,6 +87,10 @@ h4 {
   font-size: 25px;
   margin-bottom: 20px;
 }
+.foot{
+  background-color: #e8e3d1;
+}
+
 .footer {
   max-width: 1216px;
   margin: 0 auto;
@@ -112,12 +116,11 @@ p {
 .list-unstyled {
   list-style: none;
   padding-left: 0;
-  font-size: 20px;
 }
 
 .list-unstyled a {
   margin-bottom: 7px;
-  font-size: 22px;
+  font-size: 21px;
 }
 ul, ol {
   margin-top: 0;
@@ -126,7 +129,6 @@ ul, ol {
 }
 
 .text-fine{
-  margin-bottom: 15px;
   font-size: 20px;
   color: darkslateblue;
 }
@@ -234,6 +236,55 @@ ul, ol {
   display: flex;
 }
 
+/** Social media Icons **/
+.socials{
+  text-align: center;
+  background-color: #d8b542;
+}
+
+.fa {
+  font-size: 3em; /* Set the icon size */
+  padding: 7px; /* Add some space around the icon */
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 3%;
+  margin-right: 3%; /* Add some space between the icons */
+  text-decoration: none; /* Remove the underline from the links */
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7; /* Make the icon slightly transparent on hover */
+}
+
+/* Set a specific color for each icon */
+.fa-instagram {
+  color: #e4405f; /* Use the Instagram brand color */
+}
+
+.fa-facebook {
+  color: #3b5998; /* Use the Facebook brand color */
+}
+
+.fa-twitter {
+  color: #55acee; /* Use the Twitter brand color */
+}
+
+.fa-envelope {
+  color: #d44638; /* Use a red color for the email icon */
+}
+
+.fa-map-marker {
+  color: #4caf50; /* Use a green color for the location icon */
+}
+
+.fa-phone {
+  color: #2196f3; /* Use a blue color for the phone icon */
+}
+
+
+
+
 /* -------MEDIA QUARRIES -------------- */
 @media screen and (min-width:1200px) {
   .wrapper{
@@ -336,4 +387,13 @@ nav ul .fas{
     flex: 0 0 25%;
     max-width: 25%;
 }
+}
+
+/* Use media queries to make the icons responsive */
+@media screen and (max-width: 600px) {
+  .fa {
+    font-size: 1.5em; /* Reduce the icon size for smaller screens */
+    padding: 5px; /* Reduce the space around the icon for smaller screens */
+    margin: 12px; /* Reduce the space between the icons for smaller screens */
+  }
 }

@@ -1,10 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins','sans-serif';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 600;
 }
+
+a {
+  text-decoration: none;
+  color: darkslateblue;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -338,165 +349,111 @@ body{
   
 }
 /*------------- Contact us -----------------------  */
-*{
-  margin-top: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.contact{
-  position: relative;
-  min-height: 100vh;
-  padding: 50px 100px;
+/* ----Contact Section ----------- */
+.d-flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: url(https://wallpaperaccess.com/full/3124512.jpg);
-  background-size: cover;
 }
-.contact .content{
-  max-width: 800px;
+
+/** Social media Icons **/
+.socials{
   text-align: center;
+  background-color: #d8b542;
 }
-.contact .content h2{
-  font-size: 36px;
-  font-weight: 500;
-  color: #fff;
-}
-.contact .content p{
-  font-weight: 300;
-  color: #fff;
-}
-.contact-section{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.fa {
+  font-size: 3em; /* Set the icon size */
+  padding: 7px; /* Add some space around the icon */
+  margin-bottom: 30px;
   margin-top: 30px;
+  margin-left: 3%;
+  margin-right: 3%; /* Add some space between the icons */
+  text-decoration: none; /* Remove the underline from the links */
 }
-.contact-section .contact-info{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7; /* Make the icon slightly transparent on hover */
 }
-.contact-section .contact-info .box{
-  position: relative;
-  padding: 20px 0;
-  display: flex;
+
+/* Set a specific color for each icon */
+.fa-instagram {
+  color: #e4405f; /* Use the Instagram brand color */
 }
-.contact-section .contact-info .box .icon{
-  min-width: 60px;
-  height: 60px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  font-size: 22px;
+
+.fa-facebook {
+  color: #3b5998; /* Use the Facebook brand color */
 }
-.contact-section .contact-info .box .text{
-  display: flex;
-  margin-left: 20px;
-  font-size: 16px;
-  color: #fff;
-  flex-direction: column;
-  font-weight: 300;
+
+.fa-twitter {
+  color: #55acee; /* Use the Twitter brand color */
 }
-.contact-section .contact-info .box .text h3{
-  font-weight: 500;
-  color: #fff;
+
+.fa-envelope {
+  color: #d44638; /* Use a red color for the email icon */
 }
-.contact-form{
-  width: 40%;
-  padding: 40px;
-  background: #fff;
+
+.fa-map-marker {
+  color: #4caf50; /* Use a green color for the location icon */
 }
-.contact-form h2{
-  font-size: 30px;
-  color: #333;
-  font-weight: 500;
+
+.fa-phone {
+  color: #2196f3; /* Use a blue color for the phone icon */
 }
-.contact-form .inputbox{
-  position: relative;
-  width: 100%;
+
+h4 {
   margin-top: 10px;
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
-.contact-form .inputbox input,
-.contact-form .inputbox textarea{
-  width: 100%;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  border: none;
-  border-bottom: 2px solid #333;
-  outline: none;
-  resize: none;
+.foot{
+  background-color: #e8e3d1;
 }
-.contact-form .inputbox span{
-  position: absolute;
-  left: 0;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  pointer-events: none;
-  transition: 0.5s;
-  color: #667;
-}
-.contact-form .inputbox input:focus + span,
-.contact-form .inputbox input:valid + span,
-.contact-form .inputbox textarea:focus + span,
-.contact-form .inputbox textarea:valid + span {
-  color: #e91e63;
-  font-size: 12px;
-  transform: translateY(-20px);
-}
-.contact-form .inputbox input[type="submit"]{
-  width: 100px;
-  background: #00bcd4;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
 
+.footer {
+  max-width: 1216px;
+  margin: 0 auto;
+  position: relative;
+  font-weight: 800;
 }
-.contact-form .inputbox input[type="submit"]{
-  width: 100px;
-  background: #00bcd4;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
 
+.mb-20 {
+  margin-bottom: 20px !important;
 }
-.copyright{
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  background: #205e43;
-  font-weight: 300;
-  color: #fff;
+
+p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
-.copyright i{
-  color: #00bcd4;
-}
-.social-icons{
-  margin-top: 30px;
-}
-.social-icons a{
-  text-decoration: none;
+
+.col {
   padding-left: 15px;
-  font-size: 30px;
-  color: #fff;
-  display: inline-block;
-  transition: transform 0.5s;
-}
-.social-icons a:hover{
-  color: #00bcd4;
-  transform: translateY(-5px);
+  padding-right: 15px;
 }
 
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-unstyled a {
+  margin-bottom: 7px;
+  font-size: 21px;
+}
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+  
+}
+
+.text-fine{
+  font-size: 20px;
+  color: darkslateblue;
+}
 ::-webkit-scrollbar{
   width: 13px;
 }
@@ -709,3 +666,41 @@ nav ul .fas{
     font-size: 36px !important;
   }
 }
+@media (max-width: 767px) {
+  .flex-col {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+  }
+  }
+  
+  @media (min-width: 768px) {
+  .s1 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+      -webkit-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%;
+  }
+  }
+  
+  @media (min-width: 768px) {
+  .s2 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+      -webkit-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+  }
+  }
+  
+  /* Use media queries to make the icons responsive */
+  @media screen and (max-width: 600px) {
+    .fa {
+      font-size: 1.5em; /* Reduce the icon size for smaller screens */
+      padding: 5px; /* Reduce the space around the icon for smaller screens */
+      margin: 12px; /* Reduce the space between the icons for smaller screens */
+    }
+  }
