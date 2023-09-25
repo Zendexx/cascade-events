@@ -131,6 +131,7 @@ ul, ol {
 .text-fine{
   font-size: 20px;
   color: darkslateblue;
+  margin-bottom: 10px;
 }
 
 @keyframes change{
