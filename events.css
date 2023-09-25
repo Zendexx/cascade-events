@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 
 * {
   margin: 0;
@@ -19,9 +19,20 @@ a {
 html{
     scroll-behavior: smooth;
 }
-body{
-    color: #205e43;
+#About-font1 {
+  font-size: 22px;
 }
+.container h1{
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Moon Dance', cursive;
+  letter-spacing: 0.15em;
+  opacity: 0.8;
+}
+.container h1:hover{
+  opacity: 1;
+}
+
 #header{
     width: 100%;
     height: 100vh !important;
@@ -94,50 +105,38 @@ body{
   }
   .header-text{
     padding-top: 100px;
-    font-weight: 800;
-    margin-top: 9%;
+    font-weight: 900;
+    margin-top: 30%;
     font-size: 30px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Darker Grotesque', cursive;
+    text-align: center;
   }
   .header-text h1{
     font-size: 60px;
   }
-  .header-text h1 span{
-    color: #ff004f;
-    font-family: 'Signika', sans-serif;
-  }
-  .header-text{
-    text-align: center;
-    font-size: 32px;
-  }
   #About-font2{
     color: aliceblue;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Darker Grotesque', cursive;
     font-size: 50px;
-  }
-  #About-font3{
-    color: #f8f8f8;
-    font-family: 'Signika', sans-serif;
-    font-size: 50px;
+    font-weight: 700;
   }
 
   .btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    background-color: #f8f8f8;
-    border: 1px solid #fff;
-    padding: 13px 50px;
-    border-radius: 6px;
+    background: #000;
+    color: #fff;
+    padding: 1em 2em;
     text-decoration: none;
-    color: #205e43;
-    transition: background 0.5s;
-    font-family: 'Signika', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    word-spacing: 0.15em;
+    transition: 0.25s ease all;
+    font-family: 'Monoton', cursive;
   }
   .btn:hover{
-    border: 1px solid #205e43;
-    background: #d8d5d5;
+    background: #ffd346;
+    color: #000;
   
   }
   .btn2{
@@ -164,22 +163,23 @@ body{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.green-line {
-    border: none;
-    width: 45%;
-    padding-left: 15%;
-    border-top: 6px solid #205e43;
-  }
+
 #left-paragraph{
   font-size: 35px;
   font-weight: 80%;
-  padding-left: 15%;
+  text-align: center;
+  font-family: 'Darker Grotesque', cursive;
+  word-spacing: 0.1em;
+  font-weight: 900;
+  margin-bottom: 30px;
 }
+
 #right-paragraph{
   font-size: 20px;
   font-weight: 80%;
-  padding-left: 35%;
-  padding-right: 15%;
+  max-width: 700px;
+  text-align: center;
+  margin-left: 22%;
 }
 #tricky-section {
   background-color: #205e43;
