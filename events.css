@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 
 * {
   margin: 0;
@@ -18,10 +18,27 @@ a {
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
-body{
-    color: #205e43;
+
+
+#About-font1 {
+  font-size: 22px;
 }
+.container h1{
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  letter-spacing: 0.15em;
+  opacity: 0.8;
+}
+.container h2{
+  font-weight: 600;
+}
+.container h1:hover{
+  opacity: 1;
+}
+
 #header{
     width: 100%;
     height: 100vh !important;
@@ -93,51 +110,40 @@ body{
   
   }
   .header-text{
-    padding-top: 100px;
-    font-weight: 800;
-    margin-top: 9%;
+    padding-top: 5%;
+    font-weight: 900;
+    margin-top: 30%;
     font-size: 30px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Darker Grotesque', cursive;
+    text-align: center;
   }
   .header-text h1{
     font-size: 60px;
-  }
-  .header-text h1 span{
-    color: #ff004f;
-    font-family: 'Signika', sans-serif;
-  }
-  .header-text{
-    text-align: center;
-    font-size: 32px;
+    opacity: 1;
   }
   #About-font2{
     color: aliceblue;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Darker Grotesque', cursive;
     font-size: 50px;
-  }
-  #About-font3{
-    color: #f8f8f8;
-    font-family: 'Signika', sans-serif;
-    font-size: 50px;
+    font-weight: 700;
   }
 
   .btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    background-color: #f8f8f8;
-    border: 1px solid #fff;
-    padding: 13px 50px;
-    border-radius: 6px;
+    background: #000;
+    color: #fff;
+    padding: 1em 2em;
     text-decoration: none;
-    color: #205e43;
-    transition: background 0.5s;
-    font-family: 'Signika', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    word-spacing: 0.15em;
+    transition: 0.25s ease all;
+    font-family: 'Monoton', cursive;
   }
   .btn:hover{
-    border: 1px solid #205e43;
-    background: #d8d5d5;
+    background: #ffd346;
+    color: #000;
   
   }
   .btn2{
@@ -164,22 +170,25 @@ body{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.green-line {
-    border: none;
-    width: 45%;
-    padding-left: 15%;
-    border-top: 6px solid #205e43;
-  }
+
 #left-paragraph{
   font-size: 35px;
   font-weight: 80%;
-  padding-left: 15%;
+  text-align: center;
+  font-family: 'Darker Grotesque', cursive;
+  word-spacing: 0.1em;
+  font-weight: 900;
+  margin-bottom: 30px;
 }
+
 #right-paragraph{
   font-size: 20px;
-  font-weight: 80%;
-  padding-left: 35%;
-  padding-right: 15%;
+  text-align: center;
+  word-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 #tricky-section {
   background-color: #205e43;
@@ -208,9 +217,25 @@ body{
 .card-text{
   font-size: 12px;
 }
+.card-body h4{
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 18px;
+}
+
+.container-fluid{
+  max-width: 1320px;
+}
+
+.card-img-top{
+  width: 680px;
+  height: 350px;
+  object-fit: cover;
+}
 .services {
   margin-top: 20px;
-  color: #fff;
+  color: black;
 }
 .services ul {
   list-style-type: disc;
@@ -269,20 +294,22 @@ body{
 }
 .box-area h5{
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 300;
   color: #0a69ed;
   margin-top: 30px;
   margin-bottom: 5px;
+  font-family: 'Monoton', cursive;
   text-transform: uppercase;
   letter-spacing: 1px;
+  word-spacing: 0.4em;
 
 }
 .box-area span{
   color: #262626;
   display: block;
-  font-size: 13px;
+  font-size: 16px;
   margin: 0 0 10px;
-  font-weight: 400;
+  font-weight: 700;
 
 }
 .box-area .content{
@@ -299,9 +326,7 @@ body{
   margin: 0 auto;
   right: 0;
   z-index: 1;
-  border: 5px solid #fff;
   border-radius: 50%;
-  box-shadow: 0 5px 4px rgba(0,0,0,0.5);
 }
 .box-area .img-area img{
   width: 100%;
@@ -491,7 +516,11 @@ nav .fas{
   .fas{
     color: #16c478;
   }
+  .header-text{
+    padding-top: 40%;
+  }
 }
+
 @media only screen and (max-width: 767px){
   .owl-nav{
     display: none;
@@ -513,7 +542,8 @@ nav .fas{
     gap: 10px;
   }
   .header-text{
-    margin-top: 35%;
+    margin-top: 45%;
+    size: 4em;
 }
 .title{
   font-size: 30px;
