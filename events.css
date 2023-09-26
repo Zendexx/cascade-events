@@ -224,8 +224,12 @@ html{
   font-size: 18px;
 }
 
+.container-fluid{
+  max-width: 1320px;
+}
+
 .card-img-top{
-  width: 640px;
+  width: 680px;
   height: 350px;
   object-fit: cover;
 }
