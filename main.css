@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 
 * {
   margin: 0;
@@ -21,7 +21,7 @@ html{
 .header h1{
   color: #fff;
   font-size: 30px;
-  font-family: 'Moon Dance', cursive;
+  font-family: 'Sedgwick Ave Display', cursive;
   letter-spacing: 0.15em;
   opacity: 0.8;
 }
